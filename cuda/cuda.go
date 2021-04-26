@@ -106,6 +106,6 @@ func (m *GpuMat) Channels() int {
 }
 
 // Type returns the type for this GpuMat.
-func (m *GpuMat) Type() MatType {
-	return MatType(C.GpuMat_Type(m.p))
+func (m *GpuMat) Type() gocv.MatType {
+	return gocv.MatType(C.GpuMat_Type(m.p))
 }
